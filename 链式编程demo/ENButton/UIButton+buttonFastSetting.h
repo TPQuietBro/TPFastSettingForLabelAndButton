@@ -18,21 +18,21 @@ typedef UIButton *(^blockNormalTitleColor)(UIColor *titleColor);
 typedef UIButton *(^blockSelectedTitleColor)(UIColor *titleColor);
 
 @interface UIButton (buttonFastSetting)
-
+//普通标题
 - (blockNormalTitle)en_normalTitle;
-
+//高亮标题
 - (blockHighLightTitle)en_highLightTitle;
-
+//选中标题
 - (blockSelectedTitle)en_selectedTitle;
-
+//字体
 - (blockButtonFont)en_font;
-
+//背景颜色
 - (blockBgColor)en_bgColor;
-
+//普通下字体颜色
 - (blockNormalTitleColor)en_normalTitleColor;
-
+//选中后的字体颜色
 - (blockSelectedTitleColor)en_selectedTitleColor;
-
+//高亮下的字体颜色
 - (blockHighLightTitleColor)en_highLightTitleColor;
 
 @end

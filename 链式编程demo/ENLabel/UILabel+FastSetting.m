@@ -46,4 +46,12 @@
     };
 }
 
+- (CGFloat)en_textWidth{
+    return [self.text sizeWithAttributes:@{NSFontAttributeName:self.font}].width;
+}
+
+- (CGFloat)en_textHeight{
+    return [self.text sizeWithAttributes:@{NSFontAttributeName:self.font}].height;
+}
+
 @end
