@@ -1,5 +1,10 @@
 # TPFastSettingForLabelAndButton
 ## 可以快速设置label和button的属性
+### 导入两个分类即可
+
+#import "UILabel+FastSetting.h"
+
+#import "UIButton+buttonFastSetting.h"
 
 label:</br>
 
