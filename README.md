@@ -1,10 +1,8 @@
 # TPFastSettingForLabelAndButton
 ## 可以快速设置label和button的属性
 ## 导入一个头文件即可: #import "Label+Button.h"
-
+```
 label:
-
-   ```
    UILabel *label = [[UILabel alloc] init];
    
     label.en_alignment(NSTextAlignmentCenter).en_color([UIColor redColor]);
@@ -13,11 +11,7 @@ label:
     
     //或者en_font(@11)
     
-    ```
-    
 button:
-
-   ```
    //初始化直接完成按钮点击事件
    
     UIButton *button = [[UIButton alloc] initWithCallBackButtonClickBlock:^(UIButton *button) {
