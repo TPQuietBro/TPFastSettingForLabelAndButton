@@ -2,7 +2,7 @@
 ## 可以快速设置label和button的属性
 ## 导入一个头文件即可: #import "Label+Button.h"
 
-label:</br>
+label:
 
    ```
    UILabel *label = [[UILabel alloc] init];
@@ -12,9 +12,10 @@ label:</br>
     label.en_text(@"1233123").en_font([UIFont systemFontOfSize:11]);
     
     //或者en_font(@11)
+    
     ```
     
-button:</br>
+button:
 
    ```
    //初始化直接完成按钮点击事件
@@ -28,5 +29,6 @@ button:</br>
     button.en_bgColor([UIColor redColor]).en_normalTitleColor([UIColor blackColor]);
     
     button.en_font(@11).en_highLightTitle(@"被点击").en_normalTitle(@"链式按钮");
+    
     ```
     
