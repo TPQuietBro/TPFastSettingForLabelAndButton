@@ -18,6 +18,7 @@
 		5853D5F01E569075007EFC3D /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 5853D5EF1E569075007EFC3D /* TestClass.m */; };
 		5853D5F41E569422007EFC3D /* UILabel+FastSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5853D5F31E569422007EFC3D /* UILabel+FastSetting.m */; };
 		5853D5F81E569951007EFC3D /* UIButton+buttonFastSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5853D5F71E569951007EFC3D /* UIButton+buttonFastSetting.m */; };
+		5853D6131E56E609007EFC3D /* UIButton+click.m in Sources */ = {isa = PBXBuildFile; fileRef = 5853D6121E56E609007EFC3D /* UIButton+click.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,9 @@
 		5853D5F31E569422007EFC3D /* UILabel+FastSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+FastSetting.m"; sourceTree = "<group>"; };
 		5853D5F61E569951007EFC3D /* UIButton+buttonFastSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+buttonFastSetting.h"; sourceTree = "<group>"; };
 		5853D5F71E569951007EFC3D /* UIButton+buttonFastSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+buttonFastSetting.m"; sourceTree = "<group>"; };
+		5853D6111E56E609007EFC3D /* UIButton+click.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+click.h"; sourceTree = "<group>"; };
+		5853D6121E56E609007EFC3D /* UIButton+click.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+click.m"; sourceTree = "<group>"; };
+		5853D6151E56E6CD007EFC3D /* Label+Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Label+Button.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,8 +169,11 @@
 		5853D5F51E569939007EFC3D /* ENButton */ = {
 			isa = PBXGroup;
 			children = (
+				5853D6151E56E6CD007EFC3D /* Label+Button.h */,
 				5853D5F61E569951007EFC3D /* UIButton+buttonFastSetting.h */,
 				5853D5F71E569951007EFC3D /* UIButton+buttonFastSetting.m */,
+				5853D6111E56E609007EFC3D /* UIButton+click.h */,
+				5853D6121E56E609007EFC3D /* UIButton+click.m */,
 			);
 			path = ENButton;
 			sourceTree = "<group>";
@@ -306,6 +313,7 @@
 			files = (
 				5853D5F01E569075007EFC3D /* TestClass.m in Sources */,
 				5853D5C31E569056007EFC3D /* ViewController.m in Sources */,
+				5853D6131E56E609007EFC3D /* UIButton+click.m in Sources */,
 				5853D5F81E569951007EFC3D /* UIButton+buttonFastSetting.m in Sources */,
 				5853D5F41E569422007EFC3D /* UILabel+FastSetting.m in Sources */,
 				5853D5C01E569056007EFC3D /* AppDelegate.m in Sources */,
@@ -539,6 +547,7 @@
 				5853D5E71E569056007EFC3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5853D5E81E569056007EFC3D /* Build configuration list for PBXNativeTarget "链式编程demoTests" */ = {
 			isa = XCConfigurationList;
@@ -547,6 +556,7 @@
 				5853D5EA1E569056007EFC3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5853D5EB1E569056007EFC3D /* Build configuration list for PBXNativeTarget "链式编程demoUITests" */ = {
 			isa = XCConfigurationList;
@@ -555,6 +565,7 @@
 				5853D5ED1E569056007EFC3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

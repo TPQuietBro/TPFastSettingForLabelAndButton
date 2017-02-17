@@ -8,8 +8,7 @@
 
 #import "ViewController.h"
 #import "TestClass.h"
-#import "UILabel+FastSetting.h"
-#import "UIButton+buttonFastSetting.h"
+#import "Label+Button.h"
 
 @interface ViewController ()
 
@@ -34,15 +33,17 @@
     label.frame = CGRectMake(100, 100, 150, 30);
     [self.view addSubview:label];
     
+    //初始化直接完成按钮点击事件
+    UIButton *button = [[UIButton alloc] initWithCallBackButtonClickBlock:^(UIButton *button) {
+        NSLog(@"点击了按钮");
+    }];
     
-//    UIButton *button = [[UIButton alloc] init];
-//    
-//    button.en_bgColor([UIColor redColor]).en_normalTitleColor([UIColor blackColor]);
-//    
-//    button.en_font(@11).en_highLightTitle(@"被点击").en_normalTitle(@"链式按钮");
-//    button.frame = CGRectMake(100, 100, 150, 30);
-//    
-//    [self.view addSubview:button];
+    button.en_bgColor([UIColor redColor]).en_normalTitleColor([UIColor blackColor]);
+    
+    button.en_font(@11).en_highLightTitle(@"被点击").en_normalTitle(@"链式按钮");
+    button.frame = CGRectMake(100, 200, 150, 30);
+    
+    [self.view addSubview:button];
 }
 
 
