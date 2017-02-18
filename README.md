@@ -25,4 +25,10 @@ button:
     button.en_font(@11).en_highLightTitle(@"被点击").en_normalTitle(@"链式按钮");
     
     ```
+    新增了快速初始化控件的方法:
+    ```
+    //UIView *view = self.instanceInit(TypeView);
     
+    UIView *view = UIView.classInit(TypeView);
+    ```
+    详情请看demo
