@@ -30,5 +30,5 @@ button:
     //UIView *view = self.instanceInit(TypeView);
     
     UIView *view = UIView.classInit(TypeView);
-    ```
+    
     详情请看demo
