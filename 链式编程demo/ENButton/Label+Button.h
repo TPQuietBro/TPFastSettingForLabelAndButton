@@ -14,3 +14,4 @@
 #import "UILabel+FastSetting.h"
 #import "UIButton+buttonFastSetting.h"
 #import "UIButton+click.h"
+#import "NSObject+FastInit.h"
