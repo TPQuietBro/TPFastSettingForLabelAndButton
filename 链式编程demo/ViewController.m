@@ -22,6 +22,13 @@
 //    test.begin().first(@"123");
 //    test.first(@"123").begin();
     
+    
+    //UIView *view = self.instanceInit(TypeView);
+    
+    UIView *view = UIView.classInit(TypeView);
+    
+    NSLog(@"---%@",view);
+    
     UILabel *label = [[UILabel alloc] init];
     label.backgroundColor = [UIColor blueColor];
     

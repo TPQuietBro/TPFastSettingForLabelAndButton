@@ -19,6 +19,7 @@
 		5853D5F41E569422007EFC3D /* UILabel+FastSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5853D5F31E569422007EFC3D /* UILabel+FastSetting.m */; };
 		5853D5F81E569951007EFC3D /* UIButton+buttonFastSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5853D5F71E569951007EFC3D /* UIButton+buttonFastSetting.m */; };
 		5853D6131E56E609007EFC3D /* UIButton+click.m in Sources */ = {isa = PBXBuildFile; fileRef = 5853D6121E56E609007EFC3D /* UIButton+click.m */; };
+		D72792591E58959300B7A101 /* NSObject+FastInit.m in Sources */ = {isa = PBXBuildFile; fileRef = D72792581E58959300B7A101 /* NSObject+FastInit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		5853D6111E56E609007EFC3D /* UIButton+click.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+click.h"; sourceTree = "<group>"; };
 		5853D6121E56E609007EFC3D /* UIButton+click.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+click.m"; sourceTree = "<group>"; };
 		5853D6151E56E6CD007EFC3D /* Label+Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Label+Button.h"; sourceTree = "<group>"; };
+		D72792571E58959300B7A101 /* NSObject+FastInit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FastInit.h"; sourceTree = "<group>"; };
+		D72792581E58959300B7A101 /* NSObject+FastInit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FastInit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,7 @@
 		5853D5BA1E569056007EFC3D /* 链式编程demo */ = {
 			isa = PBXGroup;
 			children = (
+				D72792561E58957A00B7A101 /* ENInitView */,
 				5853D5F51E569939007EFC3D /* ENButton */,
 				5853D5F11E5693FD007EFC3D /* ENLabel */,
 				5853D5BE1E569056007EFC3D /* AppDelegate.h */,
@@ -176,6 +180,15 @@
 				5853D6121E56E609007EFC3D /* UIButton+click.m */,
 			);
 			path = ENButton;
+			sourceTree = "<group>";
+		};
+		D72792561E58957A00B7A101 /* ENInitView */ = {
+			isa = PBXGroup;
+			children = (
+				D72792571E58959300B7A101 /* NSObject+FastInit.h */,
+				D72792581E58959300B7A101 /* NSObject+FastInit.m */,
+			);
+			path = ENInitView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,6 +327,7 @@
 				5853D5F01E569075007EFC3D /* TestClass.m in Sources */,
 				5853D5C31E569056007EFC3D /* ViewController.m in Sources */,
 				5853D6131E56E609007EFC3D /* UIButton+click.m in Sources */,
+				D72792591E58959300B7A101 /* NSObject+FastInit.m in Sources */,
 				5853D5F81E569951007EFC3D /* UIButton+buttonFastSetting.m in Sources */,
 				5853D5F41E569422007EFC3D /* UILabel+FastSetting.m in Sources */,
 				5853D5C01E569056007EFC3D /* AppDelegate.m in Sources */,
