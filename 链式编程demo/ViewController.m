@@ -37,7 +37,9 @@
     //或者en_font(@11)
     NSLog(@"%f,%f",label.en_textWidth,label.en_textHeight);
     
-    label.frame = CGRectMake(100, 100, 150, 30);
+    label.en_frame(100, 100, 150, 30);
+    
+    //label.frame = CGRectMake(100, 100, 150, 30);
     [self.view addSubview:label];
     
     //初始化直接完成按钮点击事件

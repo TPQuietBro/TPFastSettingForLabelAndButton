@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5852CE041E5A87660056E6EE /* UIView+fastFrameSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5852CE031E5A87660056E6EE /* UIView+fastFrameSetting.m */; };
 		5853D5BD1E569056007EFC3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5853D5BC1E569056007EFC3D /* main.m */; };
 		5853D5C01E569056007EFC3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5853D5BF1E569056007EFC3D /* AppDelegate.m */; };
 		5853D5C31E569056007EFC3D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5853D5C21E569056007EFC3D /* ViewController.m */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5852CE021E5A87660056E6EE /* UIView+fastFrameSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+fastFrameSetting.h"; sourceTree = "<group>"; };
+		5852CE031E5A87660056E6EE /* UIView+fastFrameSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+fastFrameSetting.m"; sourceTree = "<group>"; };
 		5853D5B81E569056007EFC3D /* 链式编程demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "链式编程demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5853D5BC1E569056007EFC3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5853D5BE1E569056007EFC3D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -185,6 +188,8 @@
 		D72792561E58957A00B7A101 /* ENInitView */ = {
 			isa = PBXGroup;
 			children = (
+				5852CE021E5A87660056E6EE /* UIView+fastFrameSetting.h */,
+				5852CE031E5A87660056E6EE /* UIView+fastFrameSetting.m */,
 				D72792571E58959300B7A101 /* NSObject+FastInit.h */,
 				D72792581E58959300B7A101 /* NSObject+FastInit.m */,
 			);
@@ -325,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5853D5F01E569075007EFC3D /* TestClass.m in Sources */,
+				5852CE041E5A87660056E6EE /* UIView+fastFrameSetting.m in Sources */,
 				5853D5C31E569056007EFC3D /* ViewController.m in Sources */,
 				5853D6131E56E609007EFC3D /* UIButton+click.m in Sources */,
 				D72792591E58959300B7A101 /* NSObject+FastInit.m in Sources */,

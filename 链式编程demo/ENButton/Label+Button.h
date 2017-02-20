@@ -15,3 +15,4 @@
 #import "UIButton+buttonFastSetting.h"
 #import "UIButton+click.h"
 #import "NSObject+FastInit.h"
+#import "UIView+fastFrameSetting.h"
