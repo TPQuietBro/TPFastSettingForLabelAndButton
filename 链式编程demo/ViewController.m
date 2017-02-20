@@ -30,9 +30,11 @@
     NSLog(@"---%@",view);
     
     UILabel *label = [[UILabel alloc] init];
-    label.backgroundColor = [UIColor blueColor];
+    //label.backgroundColor = [UIColor blueColor];
     
-    label.en_alignment(NSTextAlignmentCenter).en_color([UIColor redColor]);
+    
+    label.en_alignment(ENTextAlighmentCenter).en_systemTextColor(ENOrangeColor).en_bgColor([UIColor blueColor]);
+
     label.en_text(@"1233123").en_font([UIFont systemFontOfSize:11]);
     //或者en_font(@11)
     NSLog(@"%f,%f",label.en_textWidth,label.en_textHeight);

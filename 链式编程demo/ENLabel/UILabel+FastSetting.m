@@ -30,18 +30,82 @@
     };
 }
 
-- (blockColor)en_color{
+- (blockColor)en_customTextColor{
     weak
-    return ^UILabel *(UIColor *color){
-        weakSelf.textColor = color;
+    return ^UILabel *(UIColor* color){
+        if ([color isKindOfClass:[UIColor class]]) {
+            weakSelf.textColor = color;
+        }else {
+            NSException *exception = [NSException exceptionWithName:@"error color type" reason:@"传入了错误的类型" userInfo:nil];
+            @throw exception;
+        }
+        return self;
+    };
+}
+
+- (blockSystemBlock)en_systemTextColor{
+    weak;
+    return ^UILabel *(LabelColor color){
+        switch (color) {
+            case ENRedColor:
+                weakSelf.textColor = [UIColor redColor];
+                break;
+            case ENYellowColor:
+                weakSelf.textColor = [UIColor yellowColor];
+                break;
+            case ENBlueColor:
+                weakSelf.textColor = [UIColor blackColor];
+                break;
+            case ENPurpleColor:
+                weakSelf.textColor = [UIColor purpleColor];
+                break;
+            case ENBrownColor:
+                weakSelf.textColor = [UIColor brownColor];
+                break;
+            case ENBlackColor:
+                weakSelf.textColor = [UIColor blackColor];
+                break;
+            case ENWhiteColor:
+                weakSelf.textColor = [UIColor whiteColor];
+                break;
+            case ENGreenColor:
+                weakSelf.textColor = [UIColor greenColor];
+                break;
+            case ENOrangeColor:
+                weakSelf.textColor = [UIColor orangeColor];
+                break;
+        }
+        return self;
+    };
+}
+
+- (blockLabelBgColor)en_bgColor{
+    weak
+    return ^UILabel *(UIColor* color){
+        if ([color isKindOfClass:[UIColor class]]) {
+            weakSelf.backgroundColor = color;
+        }else {
+            NSException *exception = [NSException exceptionWithName:@"error color type" reason:@"传入了错误的类型" userInfo:nil];
+            @throw exception;
+        }
         return self;
     };
 }
 
 - (blockTextAlignment)en_alignment{
     weak
-    return ^UILabel *(NSTextAlignment alignment){
-        weakSelf.textAlignment = alignment;
+    return ^UILabel *(LabelLayoutType alignment){
+        switch (alignment) {
+            case ENTextAlighmentCenter:
+                weakSelf.textAlignment = NSTextAlignmentCenter;
+                break;
+            case ENTextAlighmentLeft:
+                weakSelf.textAlignment = NSTextAlignmentLeft;
+                break;
+            case ENTextAlighmentRight:
+                weakSelf.textAlignment = NSTextAlignmentRight;
+                break;
+        }
         return self;
     };
 }
@@ -52,6 +116,18 @@
 
 - (CGFloat)en_textHeight{
     return [self.text sizeWithAttributes:@{NSFontAttributeName:self.font}].height;
+}
+
+#pragma mark - 判断是否是数字
+
+- (BOOL) deptNumInputShouldNumber:(NSString *)str
+{
+    NSString *regex = @"[0-9]*";
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex];
+    if ([pred evaluateWithObject:str]) {
+        return YES;
+    }
+    return NO;
 }
 
 @end
