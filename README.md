@@ -24,6 +24,8 @@ button:
     
     button.en_font(@11).en_highLightTitle(@"被点击").en_normalTitle(@"链式按钮");
     
+    //设置frame
+    button.en_frame(10,10,10,10);
     
     新增了快速初始化控件的方法:
    
